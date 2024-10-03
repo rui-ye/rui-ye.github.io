@@ -30,6 +30,32 @@
     ul li {
         padding: 2px; /* 添加每一项的内边距 */
     }
+
+    .tag {
+      display: inline-block;
+      background-color: #0073e6;
+      color: rgb(33, 32, 32);
+      padding: 3px 7px;
+      border-radius: 15px;
+      font-size: 0.8em;
+      margin-right: 5px;
+    }
+
+    .tag-llm {
+      background-color: #ffc8dd;
+    }
+
+    .tag-trust {
+      background-color: #cdb4db;
+    }
+
+    .tag-co {
+      background-color: #bde0fe;
+    }
+
+    .tag-fl {
+      background-color: #a2d2ff;
+    }
   </style>
 </head>
 
@@ -82,6 +108,7 @@
                   <td>
                       <div class="scrollable-list">
                           <ul>
+                              <li>[2024.09] I was awarded the <strong>National Scholarship</strong> 2024, thanks to the guidance of Prof. Chen.
                               <li>[2024.09] One paper (<a href="https://arxiv.org/pdf/2406.04845">FedLLM-Bench</a>) is accepted by <strong>NeurIPS 2024</strong>!</li>
                               <li>[2024.08] One co-first authored paper (FedRSU) is accepted by <strong>T-ITS</strong>!</li>
                               <li>[2024.07] I will attend ICML 2024 at Vienna, Austria. See you there!</li>
@@ -108,8 +135,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>📑 Publications</heading>
               <p>
-                <sup>*</sup> denotes equal contribution, <sup>†</sup> denotes corresponding author, see full list in <a href="https://scholar.google.com/citations?user=Q4-VTxcAAAAJ&hl=zh-CN">Google Scholar</a>.
-                <!-- , background color denotes <span class="highlight">highlighted</span>. -->
+                <sup>*</sup> denotes equal contribution, <sup>†</sup> denotes corresponding author, see full list in <a href="https://scholar.google.com/citations?user=Q4-VTxcAAAAJ&hl=zh-CN">Google Scholar</a>, some are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -125,26 +151,8 @@
 
     <div class="year-title">2024</div>
 
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr>
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <img src="images/fedllmattack_overview.pdf" alt="fedllmattack" width="160">
-          <p><img src="images/fedllmattack_results.png" alt="fedllmattack" width="160"></p>
-        </td>
-        <!-- <td width="75%" valign="center"> -->
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <div style="color: cornflowerblue;"><papertitle>Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models</papertitle></div>
-          <!-- <br> -->
-          <strong>Rui Ye<sup>*</sup></strong>, Jingyi Chai<sup>*</sup>, Xiangrui Liu, Yaodong Yang, Yanfeng Wang, Siheng Chen<sup>†</sup>
-          <br>
-          <em>arXiv</em>, 2024
-          <br>
-          <a href="https://arxiv.org/abs/2406.10630">arXiv</a> / <a href="data/fedllmattack.bib">BibTeX</a>
-          <br>
-          <p> This paper for the first time reveals the vulnerability of safety alignment during federated instruction tuning by proposing a simple safety attack method. While many existing FL defense methods fail to defend against such attack, we propose a post-hoc defense method that automatically and effectively enhances the safety alignment of LLMs.</p>
-        </td>
-      </tr>
-
+    <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/fedllmbench_table.png" alt="fedllmbench" width="160">
@@ -154,36 +162,37 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>FedLLM-Bench: Realistic Benchmarks for Federated Learning of Large Language Models</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="llm,fl,trust,co"></div>
           <strong>Rui Ye<sup>*</sup></strong>, Rui Ge<sup>*</sup>, Xinyu Zhu, Jingyi Chai, Yaxin Du, Yang Liu, Yanfeng Wang, Siheng Chen<sup>†</sup>
           <br>
-          <em>NeurIPS</em>, 2024
+          <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024
           <br>
           <a href="https://arxiv.org/abs/2406.04845">arXiv</a> / <a href="data/fedllmbench.bib">BibTeX</a> / <a href="https://github.com/rui-ye/FedLLM-Bench">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/FedLLM-Bench?style=social"/>
           <br>
           <p> This paper proposes the first realistic benchmark for federated learning of large language models, termed FedLLM-Bench. It encompasses 3 datasets for instruction tuning task and 1 dataset for preference alignment task, which exhibit diversities in language, quality, quantity, instruction, length, embedding, and preference.</p>
         </td>
       </tr>
-
+      
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
-          <img src="images/ipfl.pdf" alt="ipfl" width="160">
+          <img src="images/fedllmattack_overview.pdf" alt="fedllmattack" width="160">
+          <p><img src="images/fedllmattack_results.png" alt="fedllmattack" width="160"></p>
         </td>
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <div style="color: cornflowerblue;"><papertitle>Incentivizing Inclusive Data Contributions in Personalized Federated Learning</papertitle></div>
-          <!-- <br> -->
-          Enpei Zhang<sup>*</sup>, Jingyi Chai<sup>*</sup>, <strong>Rui Ye<sup>*</sup></strong>, Yanfeng Wang, Siheng Chen<sup>†</sup>
+          <div style="color: cornflowerblue;"><papertitle>Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models</papertitle></div>
+          <div class="tags" data-tags="llm,fl,trust,co"></div>
+          <strong>Rui Ye<sup>*</sup></strong>, Jingyi Chai<sup>*</sup>, Xiangrui Liu, Yaodong Yang, Yanfeng Wang, Siheng Chen<sup>†</sup>
           <br>
-          <em>ICLR AGI Workshop and DPFM Workshop</em>, 2024
+          <em>NeurIPS FL@FM Workshop</em>, 2024
           <br>
-          <a href="https://openreview.net/forum?id=o44e77vYhE">OpenReview</a> / <a href="data/ipfl.bib">BibTeX</a>
+          <a href="https://arxiv.org/abs/2406.10630">arXiv</a> / <a href="data/fedllmattack.bib">BibTeX</a>
           <br>
-          <p> This paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. </p>
+          <p> This paper for the first time reveals the vulnerability of safety alignment during federated instruction tuning by proposing a simple safety attack method. While many existing FL defense methods fail to defend against such attack, we propose a post-hoc defense method that automatically and effectively enhances the safety alignment of LLMs.</p>
         </td>
       </tr>
       
-      <tr>  <!-- <tr bgcolor="#ffffd0"> -->
+      <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/openfedllm.pdf" alt="openfedllm" width="160">
           <p><img src="images/openfedllm_comp.png" alt="openfedllm" width="160"></p>
@@ -191,7 +200,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>OpenFedLLM: Training Large Language Models on Decentralized Private Data via Federated Learning</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="llm,fl,trust,co"></div>
           <strong>Rui Ye</strong>, <span style="font-size: 12px;">Wenhao Wang, Jingyi Chai, Dihan Li, Zexi Li, Yinda Xu, Yaxin Du, Yanfeng Wang, Siheng Chen<sup>†</sup></span>
           <br>
           <em>Conference on Knowledge Discovery and Data Mining (KDD)</em>, 2024
@@ -204,7 +213,7 @@
         </td>
       </tr>
 
-      <tr>
+      <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/matrix.pdf" alt="matrix" width="160">
           <p><img src="images/matrix_eval.png" alt="matrix" width="160"></p>
@@ -212,7 +221,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>Self-Alignment of Large Language Models via Monopolylogue-based Social Scene Simulation</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="llm,trust,co"></div>
           Xianghe Pang<sup>*</sup>, Shuo Tang<sup>*</sup>, <strong>Rui Ye<sup>*</sup></strong>, Yuxin Xiong, Bolun Zhang, Yanfeng Wang, Siheng Chen<sup>†</sup>
           <br>
           <em>International Conference on Machine Learning (ICML)</em>, <strong>Spotlight</strong>, 2024
@@ -227,13 +236,31 @@
 
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/ipfl.pdf" alt="ipfl" width="160">
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Incentivizing Inclusive Data Contributions in Personalized Federated Learning</papertitle></div>
+          <div class="tags" data-tags="llm,fl,co,trust"></div>
+          Enpei Zhang<sup>*</sup>, Jingyi Chai<sup>*</sup>, <strong>Rui Ye<sup>*</sup></strong>, Yanfeng Wang, Siheng Chen<sup>†</sup>
+          <br>
+          <em>ICLR AGI Workshop and DPFM Workshop</em>, 2024
+          <br>
+          <a href="https://openreview.net/forum?id=o44e77vYhE">OpenReview</a> / <a href="data/ipfl.bib">BibTeX</a>
+          <br>
+          <p> This paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. </p>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/reverse_alignment.pdf" alt="reverse_alignment" width="160">
         </td>
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>On the Vulnerability of Safety Alignment in Open-Access LLMs</papertitle></div>
-          <!-- <br> -->
-          Jingwei Yi<sup>*</sup>, <strong>Rui Ye<sup>*</sup></strong>, <span style="font-size: 11px;">Qisi Chen, Bin Zhu, Siheng Chen, Defu Lian, Guangzhong Sun, Xing Xie, Fangzhao Wu</span>
+          <div class="tags" data-tags="llm,trust"></div>
+          <span style="font-size: 11px;">Jingwei Yi<sup>*</sup></span>, <strong>Rui Ye<sup>*</sup></strong>, <span style="font-size: 11px;">Qisi Chen, Bin Zhu, Siheng Chen<sup>†</sup>, Defu Lian, Guangzhong Sun, Xing Xie, Fangzhao Wu<sup>†</sup></span>
           <br>
           <em>Findings of ACL</em>, 2024
           <br>
@@ -254,10 +281,10 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>Federated Learning Empowered by Generative Content</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="fl,trust,co,llm"></div>
           <strong>Rui Ye</strong>, Xinyu Zhu, Jingyi Chai, Siheng Chen<sup>†</sup>, Yanfeng Wang
           <br>
-          <em>arXiv</em>, 2023
+          <em>NeurIPS FL@FM Workshop</em>, 2024
           <br>
           <a href="https://arxiv.org/abs/2312.05807">arXiv</a> / <a href="data/fedgc.bib">BibTeX</a>
           <br>
@@ -272,7 +299,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>Fake It Till Make It: Federated Learning with Consensus-Oriented Generation</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="fl,trust,co"></div>
           <strong>Rui Ye</strong>, Yaxin Du, Zhenyang Ni, Siheng Chen<sup>†</sup>, Yanfeng Wang
           <br>
           <em>International Conference on Learning Representations (ICLR)</em>, 2024
@@ -290,12 +317,12 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>FedDisco: Federated Learning with Discrepancy-aware Collaboration</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="fl,trust,co"></div>
           <strong>Rui Ye</strong>, Mingkai Xu, Jianyu Wang, Chenxin Xu, Siheng Chen<sup>†</sup>, Yanfeng Wang
           <br>
           <em>International Conference on Machine Learning (ICML)</em>, 2023
           <br>
-          <a href="https://arxiv.org/abs/2305.19229">arXiv</a> / <a href="data/feddisco.bib">BibTeX</a> / <a href="https://proceedings.mlr.press/v202/ye23f.html">PMLR</a> / <a href="https://github.com/MediaBrain-SJTU/FedDisco">Code</a> / <img src="https://img.shields.io/github/stars/MediaBrain-SJTU/pFedGraph?style=social"/>
+          <a href="https://arxiv.org/abs/2305.19229">arXiv</a> / <a href="data/feddisco.bib">BibTeX</a> / <a href="https://proceedings.mlr.press/v202/ye23f.html">PMLR</a> / <a href="https://github.com/MediaBrain-SJTU/FedDisco">Code</a> <img src="https://img.shields.io/github/stars/MediaBrain-SJTU/pFedGraph?style=social"/>
           <br>
           <p> Based on our empirical and theoretical observations, we propose to aggregate models based on both dataset size and a defined discrepancy value. </p>
         </td>
@@ -308,7 +335,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>Personalized Federated Learning with Inferred Collaboration Graphs</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="fl,trust,co"></div>
           <strong>Rui Ye<sup>*</sup></strong>, Zhenyang Ni<sup>*</sup>, Fangzhao Wu, Siheng Chen<sup>†</sup>, Yanfeng Wang
           <br>
           <em>International Conference on Machine Learning (ICML)</em>, 2023
@@ -326,7 +353,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>FedFM: Anchor-based Feature Matching for Data Heterogeneity in Federated Learning</papertitle></div>
-          <!-- <br> -->
+          <div class="tags" data-tags="fl,trust,co"></div>
           <strong>Rui Ye</strong>, Zhenyang Ni, Chenxin Xu, Jianyu Wang, Siheng Chen<sup>†</sup>, Yanfeng Wang
           <br>
           <em>IEEE Transactions on Signal Processing (TSP)</em>, 2023
@@ -378,8 +405,9 @@
       <tr>
         <td>
           <ul>
-            <li><strong>National Scholarship, 2020 (2 out of 150)</strong></li>
-            <li>Shanghai Outstanding Graduates, 2022</li>
+            <li><strong>National Scholarship</strong> for PhD Students, 2024</li>
+            <li><strong>National Scholarship</strong> for Undergraduates, 2020 (2 out of 150)</li>
+            <li><strong>Shanghai Outstanding Graduates</strong>, 2022</li>
             <li>Samsung Scholarship, 2023 (only one awardee)</li>
             <li>Mathematical Contest in Modeling, Finalist, 2021 (<1%)</li>
             <li>Shanghai Jiao Tong University Wenjun Wu AI Class, 2022 (16 are selected)</li>
@@ -459,6 +487,30 @@
       </td>
     </tr>
   </table>
+
+  <!-- Definations for tags -->
+  <script>
+    // 预定义标签的名称和简称
+    const tagsMap = {
+      'llm': { name: 'LLMs', class: 'tag-llm' },
+      'trust': { name: 'Trustworhty AI', class: 'tag-trust' },
+      'co': { name: 'Collaborative AI', class: 'tag-co' },
+      'fl': { name: 'Federated Learning', class: 'tag-fl' },
+    };
+  
+    // 渲染标签并为不同标签分配不同的CSS类
+    document.querySelectorAll('.tags').forEach(tagDiv => {
+      const tagAbbreviations = tagDiv.getAttribute('data-tags').split(',');
+      tagAbbreviations.forEach(abbreviation => {
+        if (tagsMap[abbreviation]) {
+          const tagElement = document.createElement('span');
+          tagElement.classList.add('tag', tagsMap[abbreviation].class);
+          tagElement.textContent = tagsMap[abbreviation].name;
+          tagDiv.appendChild(tagElement);
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
