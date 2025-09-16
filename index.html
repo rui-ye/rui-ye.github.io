@@ -56,6 +56,10 @@
     .tag-fl {
       background-color: #a2d2ff;
     }
+
+    .tag-agents {
+      background-color: #d8f060;
+    }
   </style>
 </head>
 
@@ -110,6 +114,7 @@
                   <td>
                       <div class="scrollable-list">
                           <ul>
+                              <li>[2025.09] New breakthrough: <strong><a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Tongyi DeepResearch</a></strong>, an open-source 30B-A3B agent matching OpenAI's Deep Research.</li>
                               <li>[2025.08] Our <a href="https://arxiv.org/pdf/2412.01708">study</a> on LLM for paper review is reported by <strong><a href="https://www.washingtonpost.com/nation/2025/07/17/ai-university-research-peer-review/">The Washington Post</a></strong>.</li>
                               <li>[2025.07] Our <strong><a href="https://arxiv.org/pdf/2507.05241">X-Masters</a></strong> for the first time achieves over 30% on <strong>Humanity's Last Exam (32.1%)</strong>!</li>
                               <li>[2025.05] Happy to be invited as an <strong>Area Chair</strong> for NeurIPS 2025 Position Paper Track!</li>
@@ -161,16 +166,33 @@
     <div class="year-title">2025</div>
 
     <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/tongyi_deepresearch.png" alt="tongyi_dr" width="160">
+          <p><img src="images/tongyi_deepresearch_pipeline.png" alt="tongyi_dr" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>Tongyi DeepResearch: A New Era of Open-Source AI Researchers</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          Tongyi DeepResearch Team
+          <br>
+          <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Blog</a> / <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B">HF Model</a> / <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B">MS Model</a> / <a href="https://github.com/Alibaba-NLP/DeepResearch">GitHub</a> / <a href="https://x.com/Ali_TongyiLab/status/1967988004179546451">Twitter (X)</a>
+          <br>
+          <p> Tongyi DeepResearch is the first fully open-source Web Agent to achieve performance on par with OpenAI's Deep Research with only <strong>30B (Activated 3B)</strong> paramters! Tongyi DeepResearch agent demonstrates state-of-the-art results, scoring <strong>32.9 on Humanity's Last Exam, 45.3 on BrowseComp, and 75.0 on the xbench-DeepSearch</strong> benchmark.</p>
+        </td>
+      </tr>
       
       <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
-          <img src="images/xmaster.png" alt="maslab" width="160">
-          <p><img src="images/xmaster_overview.png" alt="maslab" width="160"></p>
+          <img src="images/xmaster.png" alt="xmaster" width="160">
+          <p><img src="images/xmaster_overview.png" alt="xmaster" width="160"></p>
         </td>
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>SciMaster: Towards General-Purpose Scientific AI Agents<br>Part I. X-Master as Foundation — Can We Lead on Humanity's Last Exam?</papertitle></div>
-          <div class="tags" data-tags="llm,co"></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
           Jingyi Chai<sup>*</sup>, Shuo Tang<sup>*</sup><strong>Rui Ye<sup>*</sup></strong>, Yuwen Du<sup>*</sup>, Xinyu Zhu, Mengcheng Zhou, Yanfeng Wang, Weinan E, Yuzhi Zhang, Linfeng Zhang, Siheng Chen
           <br>
           <em><sup>*</sup> Equal Contributions. The ordering was randomized via a dice roll.</em>
@@ -179,7 +201,7 @@
           <br>
           <a href="https://arxiv.org/pdf/2507.05241">arXiv</a> / <a href="https://github.com/sjtu-sai-agents/X-Master">Code</a> <img src="https://img.shields.io/github/stars/sjtu-sai-agents/X-Master?style=social"/> / <a href="https://mp.weixin.qq.com/s/U6QKmdtgbSpdMwQNTTU97w">量子位</a>
           <br>
-          <p> Our X-Masters sets a new state-of-the-art record on HLE with a score of 32.1%, surpassing OpenAI's and Google's Deep Research (26.6% and 26.9%) and becoming the <strong>first to exceed the 30% threshold</strong>. X-Masters is an agentic workflow built upon our tool-augmented reasoning agent X-Master, designed to flexibly interact with external tools during reasoning.</p>
+          <p> X-Masters sets a new record on Humanity's Last Exam (HLE) with a score of <strong>32.1%</strong>, surpassing OpenAI's and Google's Deep Research (26.6% and 26.9%) and becoming the <strong>first to exceed 30%</strong>. X-Masters is an agentic workflow built upon our tool-augmented reasoning agent X-Master, designed to flexibly interact with external tools during reasoning.</p>
         </td>
       </tr>
 
@@ -191,7 +213,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>MASLab: A Unified and Comprehensive Codebase for LLM-based Multi-Agent Systems</papertitle></div>
-          <div class="tags" data-tags="llm,co"></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
           <strong>Rui Ye</strong>, Keduan Huang, Qimin Wu, Yuzhu Cai, Tian Jin, Xianghe Pang, Xiangrui Liu, Jiaqi Su, Chen Qian, Bohan Tang, Kaiqu Liang, Jiaao Chen, Yue Hu, Zhenfei Yin, Rongye Shi, Bo An, Yang Gao, Wenjun Wu, Lei Bai<sup>†</sup>, Siheng Chen<sup>†</sup>
           <br>
           <em>ArXiv Preprint</em>, 2025
@@ -210,7 +232,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>X-MAS: Towards Building Multi-Agent Systems with Heterogeneous LLMs</papertitle></div>
-          <div class="tags" data-tags="llm,co"></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
           <strong>Rui Ye<sup>*</sup></strong>, Xiangrui Liu<sup>*</sup>, Qimin Wu, Xianghe Pang, Zhenfei Yin, Lei Bai, Siheng Chen<sup>†</sup>
           <br>
           <em>ArXiv Preprint</em>, 2025
@@ -229,7 +251,7 @@
         <!-- <td width="75%" valign="center"> -->
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>MAS-GPT: Training LLMs to Build LLM-based Multi-Agent Systems</papertitle></div>
-          <div class="tags" data-tags="llm,co"></div>
+          <div class="tags" data-tags="agents,llm,co"></div>
           <strong>Rui Ye</strong>, Shuo Tang, Rui Ge, Yaxin Du, Zhenfei Yin, Siheng Chen<sup>†</sup>, Jing Shao<sup>†</sup>
           <br>
           <em>International Conference on Machine Learning (ICML)</em>, 2025
@@ -630,6 +652,7 @@
       'trust': { name: 'Trustworhty AI', class: 'tag-trust' },
       'co': { name: 'Collaborative AI', class: 'tag-co' },
       'fl': { name: 'Federated Learning', class: 'tag-fl' },
+      'agents': { name: 'Agents', class: 'tag-agents' },
     };
   
     // 渲染标签并为不同标签分配不同的CSS类
