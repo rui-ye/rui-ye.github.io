@@ -90,6 +90,7 @@
             <li><b>Agentic LLMs (Reasoning, Tool, Context, etc.):</b>
               <ul style="padding-left: 25px; list-style-type: square;">
                 <li><strong><a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Tongyi DeepResearch</a></strong>, an open-source SOTA agentic LLM with 30B size</li>
+                <li><strong><a href="https://arxiv.org/pdf/2510.24699">AgentFold</a></strong>, a new agentic paradigm with proactive context management.</li>
                 <li><strong><a href="https://arxiv.org/pdf/2507.05241">SciMaster</a></strong>, a general-purpose scientific agent (achieves >30% on HLE)</li>
                 <li><strong><a href="https://arxiv.org/pdf/2509.13305">WebSailor-V2</a></strong>, a complete pipeline from data to training for LLM agents</li>
               </ul>
@@ -133,6 +134,7 @@
                   <td>
                       <div class="scrollable-list">
                           <ul>
+                              <li>[2025.10] Check our new agentic paradigm with proactive context management: <strong><a href="https://arxiv.org/pdf/2510.24699">AgentFold</a></strong>.</li>
                               <li>[2025.10] I was awarded the <strong>National Scholarship</strong> 2025, thanks to the guidance of Prof. Chen.</li>
                               <li>[2025.09] New breakthrough: <strong><a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Tongyi DeepResearch</a></strong>, an open-source 30B-A3B agent matching OpenAI's Deep Research.</li>
                               <li>[2025.08] Our <a href="https://arxiv.org/pdf/2412.01708">study</a> on LLM for paper review is reported by <strong><a href="https://www.washingtonpost.com/nation/2025/07/17/ai-university-research-peer-review/">The Washington Post</a></strong>.</li>
@@ -190,6 +192,23 @@
 
       <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/agentfold_teaser.png" alt="agentfold" width="160">
+          <p><img src="images/agentfold_overview.png" alt="agentfold" width="160"></p>
+        </td>
+        <!-- <td width="75%" valign="center"> -->
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>AgentFold: Long-Horizon Web Agents with Proactive Context Management</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          <strong>Rui Ye<sup>*†</sup></strong>, <span style="font-size: 13px;">Zhongwang Zhang<sup>*</sup>, Kuan Li<sup>*</sup>, Huifeng Yin<sup>*†</sup>, Zhengwei Tao, Yida Zhao, Liangcai Su, Liwen Zhang, Zile Qiao, Xinyu Wang, Pengjun Xie, Fei Huang, Siheng Chen, Jingren Zhou, Yong Jiang<sup>†</sup></span>
+          <br>
+          <a href="https://arxiv.org/pdf/2510.24699">ArXiv</a> / <a href="data/agentfold.bib">BibTeX</a>
+          <br>
+          <p> AgentFold is a new agentic paradigm with proactive context management, which automatically 'folds' several historical steps (e.g., finish one sub-task) into one summary. With simple SFT, AgentFold-30B-A3B achieves achieves <strong>36.2% on BrowseComp and 47.3% on BrowseComp-ZH</strong>, surpassing DeepSeek-V3.1-671B-A37B and OpenAI's o4-mini.</p>
+        </td>
+      </tr>
+
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/tongyi_deepresearch.png" alt="tongyi_dr" width="160">
           <p><img src="images/tongyi_deepresearch_pipeline.png" alt="tongyi_dr" width="160"></p>
         </td>
@@ -197,15 +216,15 @@
         <td style="padding:20px;width:75%;vertical-align:middle">
           <div style="color: cornflowerblue;"><papertitle>Tongyi DeepResearch: A New Era of Open-Source AI Researchers</papertitle></div>
           <div class="tags" data-tags="agents,llm"></div>
-          Tongyi DeepResearch Team
+          Tongyi DeepResearch Team, Core Contributor
           <br>
-          <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Blog</a> / <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B">HF Model</a> / <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B">MS Model</a> / <a href="https://github.com/Alibaba-NLP/DeepResearch">Code</a> <img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social"/> / <a href="https://x.com/Ali_TongyiLab/status/1967988004179546451">Twitter (X)</a>
+          <a href="https://arxiv.org/pdf/2510.24701">Technical Report</a> / <a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Blog</a> / <a href="https://huggingface.co/Alibaba-NLP/Tongyi-DeepResearch-30B-A3B">HF Model</a> / <a href="https://modelscope.cn/models/iic/Tongyi-DeepResearch-30B-A3B">MS Model</a> / <a href="https://github.com/Alibaba-NLP/DeepResearch">Code</a> <img src="https://img.shields.io/github/stars/Alibaba-NLP/DeepResearch?style=social"/> / <a href="https://x.com/Ali_TongyiLab/status/1967988004179546451">Twitter (X)</a>
           <br>
           <p> Tongyi DeepResearch is the first fully open-source Web Agent to achieve performance on par with OpenAI's Deep Research with only <strong>30B (Activated 3B)</strong> paramters! Tongyi DeepResearch agent demonstrates state-of-the-art results, scoring <strong>32.9 on Humanity's Last Exam, 45.3 on BrowseComp, and 75.0 on the xbench-DeepSearch</strong> benchmark.</p>
         </td>
       </tr>
 
-      <tr bgcolor="#ffffd0">
+      <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="images/websailorv2_teaser.png" alt="websailorv2" width="160">
           <p><img src="images/websailorv2_rl.png" alt="websailorv2" width="160"></p>
