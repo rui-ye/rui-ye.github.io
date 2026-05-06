@@ -93,6 +93,7 @@
                 <li><strong><a href="https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research/">Tongyi DeepResearch</a></strong>, an open-source SOTA agentic LLM with 30B size</li>
                 <li><strong><a href="https://arxiv.org/pdf/2510.24699">AgentFold</a></strong>, a new agentic paradigm with proactive context management</li>
                 <li><strong><a href="https://arxiv.org/pdf/2603.15594">OpenSeeker</a></strong>, a frontier search agent with open-source data & model</li>
+                <li><strong><a href="https://arxiv.org/pdf/2605.04036">OpenSeeker-v2</a></strong>, a ReAct-based search agent (10k SFT, yet, SOTA)</li>
                 <li><strong><a href="https://arxiv.org/pdf/2507.05241">SciMaster</a></strong>, a general-purpose scientific agent (achieves >30% on HLE)</li>
                 <li><strong><a href="https://arxiv.org/pdf/2509.13305">WebSailor-V2</a></strong>, a complete pipeline from data to training for LLM agents</li>
               </ul>
@@ -141,6 +142,7 @@
                   <td>
                       <div class="scrollable-list">
                           <ul>
+                              <li>[2026.05] <strong><a href="https://arxiv.org/pdf/2605.04036">OpenSeeker-v2</a></strong> (a search agent trained via SFT on 10k samples, yet, SOTA) is released!</li>
                               <li>[2026.04] Honored to speak as the <strong><a href="https://mp.weixin.qq.com/s/LYlur7k6z3tCk2XrBfEE0g">student representative for SJTU 130th Anniversary (校庆学生代表)</strong></a></li>
                               <li>[2026.03] <strong><a href="https://arxiv.org/pdf/2603.15594">OpenSeeker</a></strong> (the first state-of-the-art search agent with fully open-source data & model) is released!</li>
                               <li>[2026.01] 4 papers (2 co-first authored) are accepted by <strong>ICLR 2026</strong>. See you in Brazil!</li>
@@ -200,6 +202,26 @@
     <div class="year-title">2026 (TBD)</div>
 
     <table style="width:100%;border:0px;border-spacing:0 5px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody></tbody>
+      
+      <tr bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/openseekerv2_teaser.png" alt="openseekerv2" width="160">
+          <p><img src="images/openseekerv2_results.png" alt="openseekerv2" width="160"></p>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <div style="color: cornflowerblue;"><papertitle>OpenSeeker-v2: Pushing the Limits of Search Agents with Informative and High-Difficulty Trajectories</papertitle></div>
+          <div class="tags" data-tags="agents,llm"></div>
+          Yuwen Du<sup>*</sup>, <strong>Rui Ye<sup>*,#,†</sup></strong>, Shuo Tang, Huang Keduan, Xinyu Zhu, Yuzhu Cai, Siheng Chen<sup>†</sup>
+          <br>
+          <em><sup>*</sup> Equal Core Contributions, <sup>#</sup> Project Lead, <sup>†</sup> Corresponding Author</em>
+          <br>
+          <em>ArXiv Preprint</em>, 2026
+          <br>
+          <a href="https://arxiv.org/pdf/2605.04036">ArXiv</a> / <a href="data/openseekerv2.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/OpenSeeker-v2-30B-SFT">Model</a>
+          <br>
+          <p> Building frontier search agents is often seen as a large-scale systems problem. OpenSeeker-v2 shows new possibilities. Trained on 10k samples with SFT, OpenSeeker-v2 achieves <strong>46.0% on BrowseComp, 58.1% on BrowseComp-ZH, 34.6% on Humanity's Last Exam, and 78.0% on xbench</strong>, outperforming Tongyi DeepResearch and RedSearcher that are trained via extensive CPT, SFT and RL.
+        </td>
+      </tr>
 
       <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -218,7 +240,6 @@
           <a href="https://arxiv.org/pdf/2603.15594">ArXiv</a> / <a href="data/openseeker.bib">BibTeX</a> / <a href="https://github.com/rui-ye/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/datasets/OpenSeeker/OpenSeeker-v1-Data">Training Data</a> / <a href="https://huggingface.co/OpenSeeker/OpenSeeker-v1-30B-SFT">Model</a> / <a href="https://mp.weixin.qq.com/s/lGx7WK_EvwisYCngiDW-mw">机器之心 (8k views)</a>
           <br>
           <p> For almost one year, training frontier search agents is the game of corporate: no high-quality open-source data is available in the community. OpenSeeker fills this gap. With simple SFT, <strong>OpenSeeker-30B outperforms Tongyi DeepResearch that is trained via extensive continual pre-training, SFT and RL, on BrowseComp-ZH (48.4% v.s. 46.7%)</strong>, becoming the first frontier search agents with fully open-source data & model.</p>
-          <p style="color: red; font-weight: bold;">Contact us for data with higher quality and difficulty!</p>
         </td>
       </tr>
 
