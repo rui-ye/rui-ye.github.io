@@ -207,23 +207,41 @@
 
       <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
-          <img src="images/longseeker_teaser.png" alt="longseeker" width="160">
-          <p><img src="images/longseeker_results.png" alt="longseeker" width="160"></p>
+          <img src="images/abseeker_teaser.png" alt="abseeker" width="160">
+          <p><img src="images/abseeker_method.png" alt="abseeker" width="160"></p>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <div style="color: cornflowerblue;"><papertitle>LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents</papertitle></div>
+          <div style="color: cornflowerblue;"><papertitle>ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment</papertitle></div>
           <div class="tags" data-tags="agents,llm"></div>
-          Yijun Lu<sup>*</sup>, <strong>Rui Ye<sup>*,#,†</sup></strong>, Yuwen Du, Jiajun Wang, Songhua Liu, Siheng Chen<sup>†</sup>
+          Yijun Lu<sup>*</sup>, <strong>Rui Ye<sup>*,†</sup></strong>, Jiajun Wang, Yuwen Du, Tian Jin, Songhua Liu, Siheng Chen<sup>†</sup>
           <br>
-          <em><sup>*</sup> Equal Core Contributions, <sup>#</sup> Project Lead, <sup>†</sup> Corresponding Author</em>
+          <em><sup>*</sup> Equal Core Contributions, <sup>†</sup> Corresponding Author</em>
           <br>
           <em>ArXiv Preprint</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2605.05191">ArXiv</a> / <a href="data/longseeker.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/LongSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/LongSeeker-30B-SFT">Model</a>
+          <a href="https://arxiv.org/pdf/2608.05102">ArXiv</a> / <a href="data/abseeker.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/ABSeeker">Code</a> <img src="https://github.com/PolarSeeker/ABSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/ABSeeker-4B-RL">Model</a>
           <br>
-          <p> The context of long-horizon search agents should be managed adaptively. We propose Context-ReAct, a general agentic paradigm for elastic context orchestration that integrates reasoning, context management (five operations: Skip, Compress, Rollback, Snippet and Delete), and tool use in a unified loop. Our trained agent LongSeeker achieves <strong>61.5% on BrowseComp and 62.5% on BrowseComp-ZH</strong> with only 30B-A3B parameters.
+          <p> Search agents used to be trained considering only the trajectory-level outcomes (both rejection sampling in SFT and GRPO in RL). We propose Answer-Backtracked Credit Assignment (ABC) to reweight loss of each step in SFT and leverage step-level scores as rewards in GRPO. The trained 4B agent, ABSeeker, achieves 37.3% on BrowseComp (55.3% with context management), a remarkable score for a 4B-sized agent.
         </td>
       </tr>
+
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/longseeker_teaser.png" alt="longseeker" width="160">
+        <p><img src="images/longseeker_results.png" alt="longseeker" width="160"></p>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div style="color: cornflowerblue;"><papertitle>LongSeeker: Elastic Context Orchestration for Long-Horizon Search Agents</papertitle></div>
+        <div class="tags" data-tags="agents,llm"></div>
+        Yijun Lu<sup>*</sup>, <strong>Rui Ye<sup>*,#,†</sup></strong>, Yuwen Du, Jiajun Wang, Songhua Liu, Siheng Chen<sup>†</sup>
+        <br>
+        <em><sup>*</sup> Equal Core Contributions, <sup>#</sup> Project Lead, <sup>†</sup> Corresponding Author</em>
+        <br>
+        <em>ArXiv Preprint</em>, 2026
+        <br>
+        <a href="https://arxiv.org/pdf/2605.05191">ArXiv</a> / <a href="data/longseeker.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/LongSeeker">Code</a> <img src="https://github.com/PolarSeeker/LongSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/LongSeeker-30B-SFT">Model</a>
+        <br>
+        <p> The context of long-horizon search agents should be managed adaptively. We propose Context-ReAct, a general agentic paradigm for elastic context orchestration that integrates reasoning, context management (five operations: Skip, Compress, Rollback, Snippet and Delete), and tool use in a unified loop. Our trained agent LongSeeker achieves <strong>61.5% on BrowseComp and 62.5% on BrowseComp-ZH</strong> with only 30B-A3B parameters.
+      </td>
       
       <tr bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
@@ -239,7 +257,7 @@
           <br>
           <em>ArXiv Preprint</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2605.04036">ArXiv</a> / <a href="data/openseekerv2.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/OpenSeeker-v2-30B-SFT">Model</a>
+          <a href="https://arxiv.org/pdf/2605.04036">ArXiv</a> / <a href="data/openseekerv2.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/PolarSeeker/OpenSeeker?style=social"/> / <a href="https://huggingface.co/PolarSeeker/OpenSeeker-v2-30B-SFT">Model</a>
           <br>
           <p> Building frontier search agents is often seen as a large-scale systems problem. OpenSeeker-v2 shows new possibilities. Trained on 10k samples with SFT, OpenSeeker-v2 achieves <strong>46.0% on BrowseComp, 58.1% on BrowseComp-ZH, 34.6% on Humanity's Last Exam, and 78.0% on xbench</strong>, outperforming Tongyi DeepResearch and RedSearcher that are trained via extensive CPT, SFT and RL.
         </td>
@@ -259,7 +277,7 @@
           <br>
           <em>COLM</em>, 2026
           <br>
-          <a href="https://arxiv.org/pdf/2603.15594">ArXiv</a> / <a href="data/openseeker.bib">BibTeX</a> / <a href="https://github.com/rui-ye/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/rui-ye/OpenSeeker?style=social"/> / <a href="https://huggingface.co/datasets/OpenSeeker/OpenSeeker-v1-Data">Training Data</a> / <a href="https://huggingface.co/OpenSeeker/OpenSeeker-v1-30B-SFT">Model</a> / <a href="https://mp.weixin.qq.com/s/lGx7WK_EvwisYCngiDW-mw">机器之心 (8k views)</a>
+          <a href="https://arxiv.org/pdf/2603.15594">ArXiv</a> / <a href="data/openseeker.bib">BibTeX</a> / <a href="https://github.com/PolarSeeker/OpenSeeker">Code</a> <img src="https://img.shields.io/github/stars/PolarSeeker/OpenSeeker?style=social"/> / <a href="https://huggingface.co/datasets/OpenSeeker/OpenSeeker-v1-Data">Training Data</a> / <a href="https://huggingface.co/OpenSeeker/OpenSeeker-v1-30B-SFT">Model</a> / <a href="https://mp.weixin.qq.com/s/lGx7WK_EvwisYCngiDW-mw">机器之心 (8k views)</a>
           <br>
           <p> For almost one year, training frontier search agents is the game of corporate: no high-quality open-source data is available in the community. OpenSeeker fills this gap. With simple SFT, <strong>OpenSeeker-30B outperforms Tongyi DeepResearch that is trained via extensive continual pre-training, SFT and RL, on BrowseComp-ZH (48.4% v.s. 46.7%)</strong>, becoming the first frontier search agents with fully open-source data & model.</p>
         </td>
